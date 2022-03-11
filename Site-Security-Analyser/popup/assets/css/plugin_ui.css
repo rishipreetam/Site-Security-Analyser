@@ -1,0 +1,110 @@
+* {
+	font-family: "Lato", sans-serif;
+	transition: all 0.3s;
+}
+
+html {
+	height: 300px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	background: #FFFFFF;
+	height: 300px;
+}
+
+article {
+	border-bottom: solid 10px #00FF00;
+	padding: 10px;
+	flex: 1;
+}
+
+article > div {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+h1 {
+	color: white;
+	font-size: 14pt;
+	padding: 10px;
+	text-align: center;
+	width: 330px;
+	margin: 0 0;
+	background-color: #00FF00;
+}
+
+@keyframes highlight {
+	from {
+		font-size: 15px;
+	}
+	to {
+		font-size: 18px;
+	}
+}
+
+h2 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 15px;
+	color: #2db373;
+	font-size: 14pt;
+	animation-name: highlight;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	font-size: 15px;
+	font-weight: 400;
+	margin: 2px;
+	display: inline-block;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	color: #fff;
+}
+
+iframe {
+	margin: 10px;
+	display: inline-block;
+}
+
+p {
+	margin: 5px 0;
+}
+
+.chart-wrapper {
+	text-align: center;
+	position: relative;
+	max-width: 300px;
+	margin: auto;
+	pointer-events: none;
+}
+
+.chart-wrapper .chart {
+	width: 100%;
+}
+
+.chart-wrapper .pointer {
+	position: absolute;
+	right: 7px;
+	bottom: 23px;
+	left: 0;
+	margin: auto;
+	transform: rotate(-90deg);
+	transform-origin: 7px 40px;
+	transition: all 0.3s ease-out;
+}

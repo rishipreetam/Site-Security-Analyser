@@ -1,0 +1,25 @@
+{
+	"name": "Site Security Analyser",
+	"version": "1.0",
+	"description": "Site Security Analyser helps you to browse safely and prevent you from malicious phishing websites.",
+	"icons": {
+		"16": "assets/icons/icon-16.png",
+		"48": "assets/icons/icon-48.png",
+		"128": "assets/icons/icon-128.png"
+	},
+	"permissions": ["activeTab", "declarativeContent", "storage", "webNavigation", "tabs"],
+	"background": {
+		"scripts": ["assets/js/jquery-3.3.1.min.js", "assets/js/randomforest.js", "assets/js/background.js"],
+		"persistent": true
+	},
+	"browser_action": {
+		"default_popup": "popup/popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["assets/js/jquery-3.3.1.min.js", "assets/js/features.js"]
+		}
+	],
+	"manifest_version": 2
+}
