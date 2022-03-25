@@ -40,7 +40,7 @@ function fetchCLF(callback) {
   });
 }
 
-// Return age value
+// Returns the age value
 function getDomainAge(domain) {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
@@ -50,7 +50,7 @@ function getDomainAge(domain) {
   });
 }
 
-// Return rank value
+// Returns the rank value
 function getDomainRank(domain) {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
