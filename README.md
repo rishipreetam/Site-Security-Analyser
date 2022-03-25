@@ -7,7 +7,7 @@ Site Security Analyser helps you to browse safely and prevent you from malicious
 
 INSTALLATION INSTRUCTIONS
 
-1. Extract the zip File
-2. Settings>Extensions>Developer Mode
+1. Click on Get Code option >Download as Zip > Extract the zip File
+2. Open Chrome Browser> Settings>Extensions>Developer Mode
 3. Load Unpacked > Select Site-Security-Analyser Folder
 4. Pin the Extension
