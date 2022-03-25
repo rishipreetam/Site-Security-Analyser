@@ -11,3 +11,4 @@ INSTALLATION INSTRUCTIONS
 2. Open Chrome Browser> Settings>Extensions>Developer Mode
 3. Load Unpacked > Select Site-Security-Analyser Folder
 4. Pin the Extension
+5. In case of issues please check the Installation video
